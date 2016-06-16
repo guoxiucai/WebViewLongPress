@@ -14,11 +14,8 @@
 {
     [super viewDidLoad];
     
-//    NSString *urlString = @"mp.weixin.qq.com/s?__biz=MzI2ODAzODAzMw==&mid=2650057120&idx=2&sn=c875f7d03ea3823e8dcb3dc4d0cff51d&scene=0#wechat_redirect";
-    
-    
-    NSString *urlString = @"http://mp.weixin.qq.com/s?__biz=MjM5OTM0MzIwMQ==&mid=2652545580&idx=3&sn=afdb93c3fe9ed184f31c4c3d1c5be2c7&scene=0#wechat_redirect";
-    
+    NSString *urlString = @"mp.weixin.qq.com/s?__biz=MzI2ODAzODAzMw==&mid=2650057120&idx=2&sn=c875f7d03ea3823e8dcb3dc4d0cff51d&scene=0#wechat_redirect";
+
     self.url = [self cleanURL:[NSURL URLWithString:urlString]];
     
     self.webView.delegate = self;
