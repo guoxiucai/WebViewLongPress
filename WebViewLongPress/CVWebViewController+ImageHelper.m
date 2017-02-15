@@ -190,6 +190,7 @@ static const NSTimeInterval KLongGestureInterval = 0.8f;
     //Add long press gresture for web view
     UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
     longPress.minimumPressDuration = KLongGestureInterval;
+    longPress.allowableMovement = 20;
     longPress.delegate = self;
     [self.webView addGestureRecognizer:longPress];
     
