@@ -25,6 +25,7 @@
 		4D6DF2411D0F9EF400299D2D /* SwizzeMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DF2401D0F9EF400299D2D /* SwizzeMethod.m */; };
 		4D6DF2471D0FA3F900299D2D /* CVWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DF2461D0FA3F900299D2D /* CVWebViewController.m */; };
 		4D6DF24A1D0FA47F00299D2D /* CVWebViewController+ImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DF2491D0FA47F00299D2D /* CVWebViewController+ImageHelper.m */; };
+		4DE18C321E53F31C004C75DB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE18C311E53F31C004C75DB /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		4D6DF2461D0FA3F900299D2D /* CVWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVWebViewController.m; sourceTree = "<group>"; };
 		4D6DF2481D0FA47F00299D2D /* CVWebViewController+ImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CVWebViewController+ImageHelper.h"; sourceTree = "<group>"; };
 		4D6DF2491D0FA47F00299D2D /* CVWebViewController+ImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CVWebViewController+ImageHelper.m"; sourceTree = "<group>"; };
+		4DE18C301E53F31C004C75DB /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		4DE18C311E53F31C004C75DB /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,15 +115,15 @@
 		4D6DF1F71D0F96AC00299D2D /* WebViewLongPress */ = {
 			isa = PBXGroup;
 			children = (
+				4DE18C2F1E53EFCF004C75DB /* WebKit */,
+				4DE18C2E1E53EFC0004C75DB /* UIWeb */,
 				4D6DF21D1D0F9C4800299D2D /* Vendor */,
 				4D6DF23F1D0F9EF400299D2D /* SwizzeMethod.h */,
 				4D6DF2401D0F9EF400299D2D /* SwizzeMethod.m */,
 				4D6DF1FB1D0F96AC00299D2D /* AppDelegate.h */,
 				4D6DF1FC1D0F96AC00299D2D /* AppDelegate.m */,
-				4D6DF2481D0FA47F00299D2D /* CVWebViewController+ImageHelper.h */,
-				4D6DF2491D0FA47F00299D2D /* CVWebViewController+ImageHelper.m */,
-				4D6DF2451D0FA3F900299D2D /* CVWebViewController.h */,
-				4D6DF2461D0FA3F900299D2D /* CVWebViewController.m */,
+				4DE18C301E53F31C004C75DB /* MainViewController.h */,
+				4DE18C311E53F31C004C75DB /* MainViewController.m */,
 				4D6DF2011D0F96AC00299D2D /* Main.storyboard */,
 				4D6DF2041D0F96AC00299D2D /* Assets.xcassets */,
 				4D6DF2061D0F96AC00299D2D /* LaunchScreen.storyboard */,
@@ -192,6 +195,24 @@
 				4D6DF2341D0F9C4800299D2D /* RNCachingURLProtocol.m */,
 			);
 			path = RNCachingURLProtocol;
+			sourceTree = "<group>";
+		};
+		4DE18C2E1E53EFC0004C75DB /* UIWeb */ = {
+			isa = PBXGroup;
+			children = (
+				4D6DF2481D0FA47F00299D2D /* CVWebViewController+ImageHelper.h */,
+				4D6DF2491D0FA47F00299D2D /* CVWebViewController+ImageHelper.m */,
+				4D6DF2451D0FA3F900299D2D /* CVWebViewController.h */,
+				4D6DF2461D0FA3F900299D2D /* CVWebViewController.m */,
+			);
+			name = UIWeb;
+			sourceTree = "<group>";
+		};
+		4DE18C2F1E53EFCF004C75DB /* WebKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = WebKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +322,7 @@
 				4D6DF2361D0F9C4800299D2D /* FSActionSheet.m in Sources */,
 				4D6DF2411D0F9EF400299D2D /* SwizzeMethod.m in Sources */,
 				4D6DF2371D0F9C4800299D2D /* FSActionSheetCell.m in Sources */,
+				4DE18C321E53F31C004C75DB /* MainViewController.m in Sources */,
 				4D6DF23D1D0F9C4800299D2D /* Reachability.m in Sources */,
 				4D6DF23C1D0F9C4800299D2D /* NSString+Sha1.m in Sources */,
 				4D6DF23E1D0F9C4800299D2D /* RNCachingURLProtocol.m in Sources */,

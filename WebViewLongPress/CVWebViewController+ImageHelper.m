@@ -91,6 +91,7 @@ static const NSTimeInterval KLongGestureInterval = 0.8f;
 }
 
 #pragma mark - Save image callback
+
 - (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
 {
     NSString *message = @"Succeed";
@@ -102,6 +103,7 @@ static const NSTimeInterval KLongGestureInterval = 0.8f;
 }
 
 #pragma mark - FSActionSheetDelegate
+
 - (void)FSActionSheet:(FSActionSheet *)actionSheet selectedIndex:(NSInteger)selectedIndex
 {
     [self.webView stringByEvaluatingJavaScriptFromString:@"document.documentElement.style.webkitUserSelect='text';"];

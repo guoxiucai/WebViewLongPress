@@ -13,6 +13,6 @@
 
 @property (nonatomic, strong) NSURL *url;
 
-@property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (nonatomic, strong) UIWebView *webView;
 
 @end

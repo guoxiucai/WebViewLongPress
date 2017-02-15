@@ -16,26 +16,25 @@
     
     NSString *urlString = @"mp.weixin.qq.com/s?__biz=MzI2ODAzODAzMw==&mid=2650057120&idx=2&sn=c875f7d03ea3823e8dcb3dc4d0cff51d&scene=0#wechat_redirect";
 
-    self.url = [self cleanURL:[NSURL URLWithString:urlString]];
+    self.url = [self autoFillURL:[NSURL URLWithString:urlString]];
     
-    self.webView.delegate = self;
-    
+    [self.view addSubview:self.webView];
+
     [self.webView loadRequest:[[NSURLRequest alloc] initWithURL:self.url]];
 }
 
-
-#pragma mark - private methods
-- (NSURL *)cleanURL:(NSURL *)url
+- (UIWebView *)webView
 {
-    //If no URL scheme was supplied, defer back to HTTP.
-    if (url.scheme.length == 0) {
-        url = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@", [url absoluteString]]];
+    if (_webView == nil) {
+        _webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+        _webView.autoresizingMask =  UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        _webView.delegate = self;
     }
-    
-    return url;
+    return _webView;
 }
 
 #pragma mark - UIWebViewDelegate
+
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
     NSLog(@"start load");
@@ -54,7 +53,19 @@
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
     NSLog(@"load fail");
-  
 }
+
+#pragma mark - private methods
+
+- (NSURL *)autoFillURL:(NSURL *)url
+{
+    //If no URL scheme was supplied, defer back to HTTP.
+    if (url.scheme.length == 0) {
+        url = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@", [url absoluteString]]];
+    }
+    
+    return url;
+}
+
 
 @end
