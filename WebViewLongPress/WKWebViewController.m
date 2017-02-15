@@ -37,8 +37,6 @@ typedef NS_ENUM(NSInteger, WKSelectItem) {
     
     NSString *urlString = @"mp.weixin.qq.com/s?__biz=MzI2ODAzODAzMw==&mid=2650057120&idx=2&sn=c875f7d03ea3823e8dcb3dc4d0cff51d&scene=0#wechat_redirect";
     
-//    NSString *urlString = @"https://ad.seewo.com/?p=126";
-    
     self.url = [self autoFillURL:[NSURL URLWithString:urlString]];
     
     [self.view addSubview:self.webView];
