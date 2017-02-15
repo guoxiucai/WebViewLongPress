@@ -26,6 +26,7 @@
 		4D6DF2471D0FA3F900299D2D /* CVWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DF2461D0FA3F900299D2D /* CVWebViewController.m */; };
 		4D6DF24A1D0FA47F00299D2D /* CVWebViewController+ImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6DF2491D0FA47F00299D2D /* CVWebViewController+ImageHelper.m */; };
 		4DE18C321E53F31C004C75DB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE18C311E53F31C004C75DB /* MainViewController.m */; };
+		4DE18C351E53F3F8004C75DB /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE18C341E53F3F8004C75DB /* WKWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		4D6DF2491D0FA47F00299D2D /* CVWebViewController+ImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CVWebViewController+ImageHelper.m"; sourceTree = "<group>"; };
 		4DE18C301E53F31C004C75DB /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		4DE18C311E53F31C004C75DB /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		4DE18C331E53F3F8004C75DB /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		4DE18C341E53F3F8004C75DB /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +214,8 @@
 		4DE18C2F1E53EFCF004C75DB /* WebKit */ = {
 			isa = PBXGroup;
 			children = (
+				4DE18C331E53F3F8004C75DB /* WKWebViewController.h */,
+				4DE18C341E53F3F8004C75DB /* WKWebViewController.m */,
 			);
 			name = WebKit;
 			sourceTree = "<group>";
@@ -321,6 +326,7 @@
 				4D6DF2381D0F9C4800299D2D /* FSActionSheetConfig.m in Sources */,
 				4D6DF2361D0F9C4800299D2D /* FSActionSheet.m in Sources */,
 				4D6DF2411D0F9EF400299D2D /* SwizzeMethod.m in Sources */,
+				4DE18C351E53F3F8004C75DB /* WKWebViewController.m in Sources */,
 				4D6DF2371D0F9C4800299D2D /* FSActionSheetCell.m in Sources */,
 				4DE18C321E53F31C004C75DB /* MainViewController.m in Sources */,
 				4D6DF23D1D0F9C4800299D2D /* Reachability.m in Sources */,
@@ -462,6 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = E48S8MXDB9;
 				INFOPLIST_FILE = WebViewLongPress/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -477,6 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = E48S8MXDB9;
 				INFOPLIST_FILE = WebViewLongPress/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
